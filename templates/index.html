@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <input type="text" placeholder="Insert your regular expression here" name="regular_exp">
+        <br>
+        <br>
+        <label>Test String</label>
+        <br>
+        <!-- <input type="text" placeholder="Enter your string here" name="str_name", size=100> -->
+        <textarea name="str_name" rows="4" cols="50" placeholder="Enter your text here"></textarea>
+        <button type="submit">Submit</button><br>
+        <br>
+       {% if message %}
+            {{ message }}
+        {% endif %}
+       
+    </form>
+    <br>
+</body>
+</html>
